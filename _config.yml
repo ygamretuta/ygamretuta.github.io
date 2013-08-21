@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:categories/:year/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
@@ -8,14 +8,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : The Ruby on Rails Planeswalker
+tagline: musings of an eager Ruby on Rails developer
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Ygam Retuta
+  email : business.ygamretuta@gmail.com
+  github : ygamretuta
+  twitter : ygamretuta
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -82,11 +81,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
+      short_name : ygamblog
     facebook :
       appid : 123
       num_posts: 5
