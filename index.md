@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Ruby on Rails Planeswalker
+tagline: musings of an eager Ruby on Rails developer
 ---
 {% include JB/setup %}
 
