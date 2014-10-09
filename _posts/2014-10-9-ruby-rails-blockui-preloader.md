@@ -26,4 +26,6 @@ Note that you can change the overlay or the overlay opacity, the border colors t
 
 The `spinner.gif` file can also be replaced with any preloader images you prefer.
 
+To see it in action, you can visit [http://ulife.herokuapp.com/](http://ulife.herokuapp.com/)
+
 Happy coding!
