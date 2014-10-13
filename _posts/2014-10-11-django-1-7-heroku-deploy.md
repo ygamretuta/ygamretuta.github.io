@@ -39,17 +39,15 @@ Done? Now on to gotchas.
 
     `mkdir -p static # shazam/static`
 
-4. As for your WSGI, we will add a bit of code for it to also handle uploaded files (`shazam/wsgi.py`):
+4. As for your WSGI, it will be as it is on Heroku
 
     {% gist f7c73dd35769aa671467 %}
 
-    Remember to also create an `uploads` dir under your MEDIA_ROOT dir. Remember to add this directory to your .gitignore file.
-
-5. We need to be able to display sorl-thumbails on our list. Create or modify this file (`members/admin.py`):
+5. We need to be able to display Cloudinary thumbnails on our list. Create or modify this file (`members/admin.py`):
 
     {% gist 5e89b7fc70486e820562 %}
 
-6. We need our members app to also delete the photo in our filesystem whenever a record is deleted (`members/signals.py`):
+6. We need our members app to also delete the photo in Cloudinary whenever a record is deleted (`members/signals.py`):
 
     {% gist 60acc62dd11822b39fb8 %}
 
