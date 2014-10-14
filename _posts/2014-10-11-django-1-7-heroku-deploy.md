@@ -11,10 +11,6 @@ We will deploy a Django 1.7 project to Heroku. We will call it "shazam" It will 
 will have a Member model that has a Cloudinary field. We will mainly work with an admin
 interface so there will be no front-end.
 
-This is the Member model we will be working with:
-
-{% gist 619c29353109e0491744 %}
-
 I assume that you have already created a project, an app called "members", have already migrated initial schemas
 and have already created a superuser and is able to access the admin interface.
 
@@ -23,6 +19,10 @@ Read [https://devcenter.heroku.com/articles/getting-started-with-django](this), 
 Done? Now on to gotchas.
 
 1. The guide uses earlier versions of Django, so instead of `python manage.py syncdb`, you should use `python manage.py migrate`.
+
+    This is the Member model we will be working with:
+    
+    {% gist 619c29353109e0491744 %}
 
 2. This is the requirements.txt we will use:
 
