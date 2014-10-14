@@ -24,7 +24,11 @@ Done? Now on to gotchas.
 
 1. The guide uses earlier versions of Django, so instead of `python manage.py syncdb`, you should use `python manage.py migrate`.
 
-2. The guide doesn't separate local settings from your production ones, so here's what we have to do. Create this file (`shazam/settings.py`):
+2. This is the requirements.txt we will use:
+
+    {% gist 7d50839013eced6801f8 %}
+
+3. The guide doesn't separate local settings from your production ones, so here's what we have to do. Create this file (`shazam/settings.py`):
 
     {% gist 0499163fa3fb01d48cd2 %}
 
@@ -35,27 +39,27 @@ Done? Now on to gotchas.
     That file will house your local database settings and development-only apps you can add later. Remember to add
     that file to your .gitignore file
 
-3. Create a `static` directory under the `shazam` module and add a .keep file to it so git won't ignore it. This will house compiled assets on production.
+4. Create a `static` directory under the `shazam` module and add a .keep file to it so git won't ignore it. This will house compiled assets on production.
 
     `mkdir -p static # shazam/static`
 
-4. As for your WSGI, it will be as it is on Heroku
+5. As for your WSGI, it will be as it is on Heroku
 
     {% gist f7c73dd35769aa671467 %}
 
-5. We need to be able to display Cloudinary thumbnails on our list. Create or modify this file (`members/admin.py`):
+6. We need to be able to display Cloudinary thumbnails on our list. Create or modify this file (`members/admin.py`):
 
     {% gist 5e89b7fc70486e820562 %}
 
-6. We need our members app to also delete the photo in Cloudinary whenever a record is deleted (`members/signals.py`):
+7. We need our members app to also delete the photo in Cloudinary whenever a record is deleted (`members/signals.py`):
 
     {% gist 60acc62dd11822b39fb8 %}
 
-7. We need to be able to automatically import our signals. Create this file (`members/apps.py`):
+8. We need to be able to automatically import our signals. Create this file (`members/apps.py`):
 
     {% gist 0d40e1572ca94c3472c1 %}
 
-8. Then add this to your `shazam/__init__.py` file
+9. Then add this to your `shazam/__init__.py` file
 
     `default_app_config = 'members.apps.DefaultConfig'`
 
