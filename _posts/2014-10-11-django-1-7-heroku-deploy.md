@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 We will deploy a Django 1.7 project to Heroku. We will call it "shazam" It will have a "built-in" app called "members" which
-will have a Member model that has a sorl-thumbnail field. We will mainly work with an admin
+will have a Member model that has a Cloudinary field. We will mainly work with an admin
 interface so there will be no front-end.
 
 This is the Member model we will be working with:
