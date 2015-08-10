@@ -110,7 +110,7 @@ nav{
 	font-size: 16px;
 	font-weight: bold;
 }
-.categories-list-item{
+.categories-list-item, .tags-list-item{
 	display: block;
 	padding:8px 15px; 
 	border-bottom:1px solid #ddd; 
@@ -120,14 +120,14 @@ nav{
 	-moz-transition:0.4s ease;
 	-o-transition:0.4s ease;
 }
-.categories-list-item:last-of-type{
+.categories-list-item:last-of-type, .tags-list-item:last-of-type{
 	border-bottom:none; 
 }
-.categories-list-item:hover{
+.categories-list-item:hover, .categories-list-item:hover{
 	background-color: rgba(0,0,10,0.075);
 	color: #983;
 }
-.categories-list-item .my-badge{
+.categories-list-item .my-badge, .tags-list-item .my-badge{
 	font-size: 12px;
 	font-weight: bold;
 	color: #fff;
@@ -140,7 +140,7 @@ nav{
 	-moz-transition:0.4s ease;
 	-o-transition:0.4s ease;
 }
-.categories-list-item:hover .my-badge{
+.categories-list-item:hover .my-badge, .tags-list-item:hover .my-badge{
 	-webkit-transform:rotate(360deg) scale(1.2);
 	-moz-transform:rotate(360deg) scale(1.2);
 	-o-transform:rotate(360deg) scale(1.2);
@@ -467,4 +467,16 @@ blockquote:last-child {
 	.post article ul{
 		padding-left: 25px;
 	}
+}
+
+.post-tag{
+	color: #3e6d8e;
+	font-size: 12px;
+	white-space: nowrap;
+	background: #e4edf4;
+	border: 1px solid #e4edf4;
+	display: inline-block;
+	margin: 2px 2px 2px 0;
+	padding: 2px;
+	border-radius: 3px;
 }

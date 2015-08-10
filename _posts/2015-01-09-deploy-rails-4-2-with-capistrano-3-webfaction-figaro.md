@@ -7,9 +7,7 @@ dsq_thread_id:
   - 3403366718
 categories:
   - Ruby on Rails
-tags:
-  - capistrano
-  - ruby-on-rails
+tags: [capistrano, ruby-on-rails]
 ---
 > **VERSIONS: Capistrano 3.3.5, Rails 4.2.0**
 

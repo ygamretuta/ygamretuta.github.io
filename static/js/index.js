@@ -3,7 +3,7 @@
  */
 $(document).ready(function() {
 
-    categoryDisplay();
+    tagDisplay();
     generateContent();
     backToTop();
 });
@@ -96,6 +96,18 @@ function categoryDisplay() {
 
         $('.post-list-body>div[post-cate!=' + cate + ']').hide(250);
         $('.post-list-body>div[post-cate=' + cate + ']').show(400);
+    });
+}
+
+function tagDisplay(){
+    $('.post-list-body > div[data-post-tag!="All"]').hide();
+
+    $('.tags-list-item').click(function(){
+        var tag = $(this).data('tag');
+
+
+        $('.post-list-body > div[data-post-tag!=' + tag + ']').hide(250);
+        $('.post-list-body > div[data-post-tag=' + tag + ']').show(400);
     });
 }
 
