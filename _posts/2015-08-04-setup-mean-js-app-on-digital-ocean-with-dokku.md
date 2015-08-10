@@ -15,11 +15,8 @@ tags:
 
 Create a Droplet:
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.38.43-AM-147x300.png" alt="Screen Shot 2015-08-04 at 5.38.43 AM" width="147" height="300" class="alignleft size-medium wp-image-69" />][1]
+[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.38.32-AM.png" alt="Screen Shot 2015-08-04 at 5.38.32 AM" class="alignleft size-medium wp-image-71" />][2]
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.38.32-AM-137x300.png" alt="Screen Shot 2015-08-04 at 5.38.32 AM" width="137" height="300" class="alignleft size-medium wp-image-71" />][2]
-
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.39.36-AM-300x82.png" alt="Screen Shot 2015-08-04 at 5.39.36 AM" width="300" height="82" class="alignleft size-medium wp-image-72" />][3]
 
 <div class="clearfix">
 </div>

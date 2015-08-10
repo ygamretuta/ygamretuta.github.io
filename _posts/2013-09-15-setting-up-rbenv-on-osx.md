@@ -12,74 +12,54 @@ quite a while to setup Rbenv but it was worth it because I haven't ran into any 
 
 Fire up your terminal and let's get started! I am assuming you have Homebrew installed.
 
-{% highlight bash %}
-brew update
-brew install rbenv
-brew install rbenv-gem-rehash
-brew install ruby-build
-{% endhighlight %}
+    $ brew update
+    $ brew install rbenv
+    $ brew install rbenv-gem-rehash
+    $ brew install ruby-build
 
 Once you have installed rbenv  run this command to setup the paths for rbenv
 
-```
-rbenv init
-```
+    rbenv init
 
 If your installation does not recognize the rbenv paths, open .profile and add the following lines:
 
-{% highlight bash %}
-PATH="$HOME/.rbenv/bin:$PATH"
-export PATH
-{% endhighlight %}
+    $ PATH="$HOME/.rbenv/bin:$PATH"
+    $ export PATH
 
 Add this to your .profile
 
-```
-eval "$(rbenv init -)"
-```
+    eval "$(rbenv init -)"
 
 After restarting the terminal or sourcing .profile, install some rubies then rehash rbenv
 
-{% highlight bash %}
-rbenv install 2.0.0-p247
-rbenv install 1.9.3-p448
-rbenv rehash
-{% endhighlight %}
+    $ rbenv install 2.0.0-p247
+    $ rbenv install 1.9.3-p448
+    $ rbenv rehash
 
 By default rbenv uses the system ruby version, to use the installed version, type in
 
-{% highlight bash %}
-rbenv global 2.0.0-p247
-ruby -v
-{% endhighlight %}
+    $ rbenv global 2.0.0-p247
+    $ ruby -v
 
 If one of your project needs a specific version, cd to the app directory then type in (once you cd out of the
 directory, rbenv will switch to the global ruby). this will create a .ruby-version file on your app
 
-{% highlight bash %}
-rbenv local 1.9.3-p448
-ruby -v
-{% endhighlight %}
+    rbenv local 1.9.3-p448
+    ruby -v
 
 If you want rvm-like gemset functionality, install rbenv-gemset
 
-{% highlight bash %}
-brew install rbenv-gemset
-rbenv gemset create 2.0.0-p247 mygemset
-rbenv gemset create 1.9.3-p448 myothergemset
-rbenv gemset active
-{% endhighlight %}
+    $ brew install rbenv-gemset
+    $ rbenv gemset create 2.0.0-p247 mygemset
+    $ rbenv gemset create 1.9.3-p448 myothergemset
+    $ rbenv gemset active
 
 If you want a rails app to use a gemset, cd into an app directory and type in:
 
-```
-echo -e "mygemset" > .rbenv-gemsets
-```
+    echo -e "mygemset" > .rbenv-gemsets
 
 Make sure that the .ruby-version file specified contains the gemset you specified in .rbenv-gemsets
 
-```
-rbenv gemset list # will display ruby version and the gemsets under it
-```
+    rbenv gemset list # will display ruby version and the gemsets under it
 
 Enjoy working with Rbenv! Cheers! \m/
