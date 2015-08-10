@@ -2,8 +2,8 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:title
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor"]
+highlighter: rogue
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -12,7 +12,7 @@ title : The Ruby on Rails Planeswalker
 tagline: musings of an eager Ruby on Rails developer
 author :
   name : Ygam Retuta
-  email : business.ygamretuta@gmail.com
+  email : ygam.j.retuta@gmail.com
   github : ygamretuta
   twitter : ygamretuta
 
@@ -80,13 +80,6 @@ JB :
   #
   comments :
     provider : disqus
-    disqus :
-      short_name : ygamblog
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
