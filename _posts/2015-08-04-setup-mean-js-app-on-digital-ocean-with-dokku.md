@@ -15,7 +15,7 @@ tags:
 
 Create a Droplet:
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.38.32-AM.png" alt="Screen Shot 2015-08-04 at 5.38.32 AM" class="alignleft size-medium wp-image-71" />][2]
+[<img src="http://res.cloudinary.com/myph/image/upload/v1439381576/blog/Screen-Shot-2015-08-04-at-5.38.32-AM.png" alt="Screen Shot 2015-08-04 at 5.38.32 AM"/>][2]
 
 
 <div class="clearfix">
@@ -23,7 +23,7 @@ Create a Droplet:
 
 Take note of the IP address of the newly created app
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.46.47-AM.png" alt="Screen Shot 2015-08-04 at 5.46.47 AM" class="alignnone size-full wp-image-75" />][4]
+[<img src="http://res.cloudinary.com/myph/image/upload/v1439381575/blog/Screen-Shot-2015-08-04-at-5.46.47-AM.png" alt="Screen Shot 2015-08-04 at 5.46.47 AM"/>][4]
 
 Login into the droplet and Update local settings:
 
@@ -33,7 +33,7 @@ Login into the droplet and Update local settings:
 
 visit the IP address of the app and configure the settings. Usually you can just leave the defaults. Then click `Finish Setup`
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-6.25.28-AM.png" alt="Screen Shot 2015-08-04 at 6.25.28 AM" class="alignnone size-full wp-image-84" />][5]
+[<img src="http://res.cloudinary.com/myph/image/upload/v1439381588/blog/Screen-Shot-2015-08-04-at-6.25.28-AM.png" alt="Screen Shot 2015-08-04 at 6.25.28 AM"/>][5]
 
 on your local terminal, clone the meanjs repo and install dependencies
 
@@ -54,7 +54,7 @@ log in to the remote server and install the mongodb plugin for Dokku
     $ dokku plugins-install
     
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-7.16.52-AM.png" alt="Screen Shot 2015-08-04 at 7.16.52 AM" class="alignnone size-medium wp-image-97" />][6]
+[<img src="http://res.cloudinary.com/myph/image/upload/v1439381580/blog/Screen-Shot-2015-08-04-at-7.16.52-AM.png" alt="Screen Shot 2015-08-04 at 7.16.52 AM" />][6]
 
 make sure that admin\_pw and pass\_meanjs exists:
 
@@ -77,7 +77,7 @@ Start mongodb and create database:
     $ dokku mongodb:create meanjs
     
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-8.27.23-AM.png" alt="Screen Shot 2015-08-04 at 8.27.23 AM" class="alignnone size-full wp-image-98" />][7]
+[<img src="http://res.cloudinary.com/myph/image/upload/v1439381579/blog/Screen-Shot-2015-08-04-at-8.27.23-AM.png" alt="Screen Shot 2015-08-04 at 8.27.23 AM"/>][7]
 
 set initial ENV vars
 
@@ -114,13 +114,11 @@ edit `config/env/production.js` locally:
 
 run `grunt build` then push to dokku and voila! enjoy the fruits of your labor by visiting the address that appears at the end of deploy (we have to do this, because we haven&#8217;t configured a VHOST for it yet, so the port changes for each deploy).
 
-[<img src="http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-11.00.13-AM.png" alt="Screen Shot 2015-08-04 at 11.00.13 AM" class="alignnone size-medium wp-image-108" />][8]
+[<img src="http://res.cloudinary.com/myph/image/upload/v1439381586/blog/Screen-Shot-2015-08-04-at-11.00.13-AM.png" alt="Screen Shot 2015-08-04 at 11.00.13 AM"/>][8]
 
- [1]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.38.43-AM.png
- [2]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.38.32-AM.png
- [3]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.39.36-AM.png
- [4]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-5.46.47-AM.png
- [5]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-6.25.28-AM.png
- [6]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-7.16.52-AM.png
- [7]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-8.27.23-AM.png
- [8]: http://www.ygamretuta.info/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-11.00.13-AM.png
+ [2]: http://res.cloudinary.com/myph/image/upload/v1439381576/blog/Screen-Shot-2015-08-04-at-5.38.32-AM.png
+ [4]: http://res.cloudinary.com/myph/image/upload/v1439381575/blog/Screen-Shot-2015-08-04-at-5.46.47-AM.png
+ [5]: http://res.cloudinary.com/myph/image/upload/v1439381588/blog/Screen-Shot-2015-08-04-at-6.25.28-AM.png
+ [6]: http://res.cloudinary.com/myph/image/upload/v1439381580/blog/Screen-Shot-2015-08-04-at-7.16.52-AM.png
+ [7]: http://res.cloudinary.com/myph/image/upload/v1439381579/blog/Screen-Shot-2015-08-04-at-8.27.23-AM.png
+ [8]: http://res.cloudinary.com/myph/image/upload/v1439381586/blog/Screen-Shot-2015-08-04-at-11.00.13-AM.png
